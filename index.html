@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" type="module" defer></script>
+    <title>Growpital - wallet</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">Growpital</div>
+      </div>
+      <div class="nav-items">
+        <div class="nav-item">Home</div>
+        <div class="nav-item">About</div>
+        <div class="nav-item">Service</div>
+        <div class="nav-item">Contact us</div>
+      </div>
+      <div class="nav-icons">
+        <div class="notification-ico">
+          <img
+            src="./Assets/icons/notification.svg"
+            width="40"
+            class="icon"
+            alt="notifications"
+          />
+        </div>
+        <div>
+          <img
+            src="./Assets/icons/account.svg"
+            width="40"
+            class="icon"
+            alt="notifications"
+          />
+        </div>
+      </div>
+    </nav>
+    <main class="main-section">
+      <!-- Modal -->
+      <div class="modal"></div>
+      <!-- side menu -->
+      <div class="side-menu">
+        <div class="side-container">
+          <div class="side-ham side-nav-item">
+            <img src="./Assets/icons/menu.svg" width="35" alt="ham button" />
+            <div class="side-label menu open">Menu</div>
+          </div>
+          <div class="underline"></div>
+          <div class="other-side-nav-items"></div>
+        </div>
+      </div>
+      <!-- transaction section -->
+      <div class="transation-section">
+        <!-- card section -->
+        <div class="card-design">
+          <div class="card-top">
+            <div>
+              <div class="card-heading">Your Balance</div>
+              <div class="card-sub">&#8377; 4210.00</div>
+            </div>
+            <img src="./Assets/icons/wallet2.svg" width="60" alt="" />
+          </div>
+          <div class="card-bottom">
+            <button class="btn btn-add">Add Money</button>
+            <button class="btn btn-withdraw">Withdraw</button>
+          </div>
+        </div>
+        <!-- transactions -->
+        <div class="trans-items">
+          <div class="trans-item">
+            <div class="main-head">Transactions</div>
+            <p class="sub-head">View All</p>
+          </div>
+          <div class="other-transactions"></div>
+        </div>
+      </div>
+      <!-- Add Money -->
+      <div class="add-money-container">
+        <div class="add-money-card">
+          <div class="card-title">Add Money</div>
+          <div class="input">
+            <input type="text" id="am-inp" required />
+            <label class="inp-label" for="am-inp">Enter Amount to add</label>
+          </div>
+          <div class="amounts">
+            <div class="capsule">&#8377; 5,000</div>
+            <div class="capsule">&#8377; 10,000</div>
+            <div class="capsule popular">&#8377; 50,000</div>
+            <div class="capsule">&#8377; 100,000</div>
+          </div>
+          <br />
+          <div class="send-money-container">
+            <img src="./Assets/icons/bank.svg" width="40" alt="bank" />
+            <div class="send-money-details">
+              <p>Send Money To Bank</p>
+              <div class="sub-details">
+                <div class="sub-options">RTGS/NEFT/IMPS?</div>
+                <div class="know-more">Know More</div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-continue">Continue</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
